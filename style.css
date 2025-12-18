@@ -1,0 +1,411 @@
+/* ============================= */
+/* RESET & FONT                  */
+/* ============================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, #842020 0%, #e85b5b 50%, #842020 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* ============================= */
+/* ID CARD CONTAINER             */
+/* ============================= */
+.id-container {
+  display: flex;
+  gap: 10rem;
+}
+
+.id-card {
+  width: 493.3px;
+  height: 770.78px;
+  border-radius: 15.42px;
+  position: relative;
+  overflow: hidden;
+  background-color: #ffad35;
+}
+
+/* ============================= */
+/* FRONT ID ELEMENTS             */
+/* ============================= */
+
+/* Background rectangles */
+.rect-red {
+  position: absolute;
+  left: 8.48px;
+  top: 9.25px;
+  width: 475.57px;
+  height: 752.28px;
+  background-color: #e5173e;
+  border-radius: 15.42px;
+}
+.rect-white {
+  position: absolute;
+  left: 8.48px;
+  top: 272.86px;
+  width: 475.57px;
+  height: 488.68px;
+  background-color: #ffffff;
+}
+.line-yellow {
+  position: absolute;
+  left: 8.48px;
+  top: 272.86px;
+  width: 475.57px;
+  height: 4.62px;
+  background-color: #ffad35;
+}
+
+/* Logo */
+.image-1 {
+  position: absolute;
+  left: 8.48px;
+  top: 22.35px;
+  width: 150.17px;
+  height: 112.63px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Photo rings */
+.ellipse-bottom {
+  position: absolute;
+  left: 122.55px;
+  top: 149.53px;
+  width: 248.19px;
+  height: 245.88px;
+  background-color: #ffad35;
+  border-radius: 50%;
+  z-index: 1;
+}
+.ellipse-middle {
+  position: absolute;
+  left: 127.18px;
+  top: 153.39px;
+  width: 238.94px;
+  height: 238.94px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  z-index: 2;
+}
+.ellipse-top {
+  position: absolute;
+  left: 131.03px;
+  top: 157.24px;
+  width: 231.23px;
+  height: 231.23px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #e5173e;
+  z-index: 3;
+}
+.ellipse-top img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Text - Front ID */
+.company-name {
+  position: absolute;
+  left: 150.3px;
+  top: 47.79px;
+  width: 319.1px;
+  height: 28px;
+  font-size: 23.12px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #ffffff;
+}
+.branch-name {
+  position: absolute;
+  left: 193.47px;
+  top: 78.62px;
+  width: 232.78px;
+  height: 15px;
+  font-size: 12.33px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #ffffff;
+}
+.employee-name {
+  position: absolute;
+  left: 87.1px;
+  top: 415.45px;
+  width: 319.1px;
+  font-size: 49.33px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #000000;
+}
+.employee-id {
+  position: absolute;
+  left: 87.1px;
+  top: 477.11px;
+  width: 319.1px;
+  font-size: 18.5px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #000000;
+}
+
+/* Signature - Front ID */
+.signature-img {
+  position: absolute;
+  left: 127.18px;
+  top: 576.55px;
+  width: 238.79px;
+  height: 129.58px;
+  object-fit: contain;
+}
+.signature-line {
+  position: absolute;
+  left: 100.2px;
+  top: 697.56px;
+  width: 292.9px;
+  border-top: 1.54px solid #000000;
+}
+.signature-label {
+  position: absolute;
+  left: 139.51px;
+  top: 703.72px;
+  width: 214.28px;
+  font-size: 11.56px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #000000;
+}
+
+/* ============================= */
+/* BACK ID ELEMENTS              */
+/* ============================= */
+
+/* Background layers */
+.back-rect-red {
+  position: absolute;
+  left: 8.48px;
+  top: 9.25px;
+  width: 475.57px;
+  height: 752.28px;
+  background-color: #e5173e;
+  border-radius: 15.42px;
+}
+.back-rect-white {
+  position: absolute;
+  left: 8.48px;
+  top: 64.75px;
+  width: 475.57px;
+  height: 561.9px;
+  background-color: #ffffff;
+}
+.back-rect-header {
+  position: absolute;
+  left: 8.48px;
+  top: 9.25px;
+  width: 475.57px;
+  height: 73.22px;
+  background-color: #ffffff;
+  border-radius: 15.42px;
+}
+
+/* Terms & Conditions */
+.back-terms-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 28.52px;
+  width: 319.1px;
+  font-size: 18.5px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #000000;
+}
+
+.back-terms-text {
+  margin-bottom: 12px; /* Adjust the empty line spacing */
+  font-size: 10.79px;
+  line-height: 15.4px;
+  letter-spacing: 0.025em;
+  color: #000000;
+}
+
+.back-terms-paragraph {
+  position: absolute;
+  left: 27px; /* updated X */
+  top: 65px; /* updated Y */
+  width: 438.58px; /* updated width */
+  height: 232px; /* updated height */
+  font-size: 10.79px;
+  font-weight: 400; /* Regular */
+  line-height: 15.4px;
+  letter-spacing: 0.02em; /* 2% */
+  color: #000000;
+  text-align: left; /* keep bullet alignment */
+}
+
+.back-terms-paragraph li {
+  margin-bottom: 2px; /* spacing between bullet items */
+}
+
+.back-terms-paragraph ul {
+  display: inline-block; /* shrink to content */
+  text-align: left;
+  margin: 5px auto 0 auto;
+  padding-left: 20px;
+}
+
+/* Emergency Contact Section */
+.back-emergency-label {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 322.96px;
+  width: 478.66px;
+  font-size: 18.5px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #000000;
+}
+
+/* ===== NEW EMERGENCY CONTACT INFO ===== */
+.back-emergency-info {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 352.25px; /* keep your current vertical position */
+  width: 214.28px; /* adjust width if needed */
+  font-weight: 500; /* Medium */
+  font-size: 15.42px;
+  line-height: 30.8px;
+  letter-spacing: 0.02em;
+  color: #000000;
+  text-align: center; /* center text */
+}
+
+.back-emergency-signature-img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 451.68px;
+  width: 193.32px;
+  height: 104.9px;
+  object-fit: cover;
+  filter: brightness(0) saturate(100%); /* makes the image fully black */
+}
+
+/* Line 2 under Yves signature */
+.back-emergency-line-2 {
+  position: absolute;
+  left: 100.2px;
+  top: 550.34px;
+  width: 292.9px;
+  height: 0;
+  border-top: 1.54px solid #000000;
+}
+
+/* Emergency Contact Signature text under Line 2 */
+.back-emergency-signature-text {
+  position: absolute;
+  left: 139.51px;
+  top: 556.5px;
+  width: 214.28px;
+  font-weight: 500; /* Medium */
+  font-size: 11.56px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #000000;
+}
+
+/* Footer text (centered) */
+.back-footer {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 588.11px;
+  width: 457.07px;
+  font-size: 10.79px;
+  font-style: italic;
+  line-height: 15.4px;
+  letter-spacing: 0.02em;
+  text-align: center; /* centered now */
+  color: #000000;
+}
+
+/* Bottom Logo & Company Info */
+.back-logo {
+  position: absolute;
+  left: 12px;
+  top: 638px;
+  width: 150.17px;
+  height: 112.63px;
+  object-fit: cover;
+}
+.back-company-name {
+  position: absolute;
+  left: 155.7px;
+  top: 669.81px;
+  width: 319.1px;
+  font-size: 23.12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #ffffff;
+}
+.back-branch-name {
+  position: absolute;
+  left: 198.89px;
+  top: 700.64px;
+  width: 232.78px;
+  font-size: 12.33px;
+  font-style: italic;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Back card background */
+.back {
+  background-color: #ffad35;
+}
+
+/* LINE 2 under Yves signature */
+.back-emergency-line-2 {
+  position: absolute;
+  left: 100.2px;
+  top: 550.34px;
+  width: 292.9px;
+  height: 0;
+  border-top: 1.54px solid #000000;
+}
+
+/* Emergency Contact Signature Text under line 2 */
+.back-emergency-signature-text {
+  position: absolute;
+  left: 139.51px;
+  top: 556.5px;
+  width: 214.28px;
+  height: 14px;
+  font-weight: 500; /* Medium */
+  font-size: 11.56px;
+  letter-spacing: 0.02em;
+  color: #000000;
+  text-align: center;
+}
